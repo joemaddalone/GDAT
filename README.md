@@ -66,6 +66,7 @@ Proposed Data Stucture
 	+	MediaTitle	string
 
 - MediaComment
+	+   Id	integer
 	+	MediaId	integer
 	+	PersonId	integer
 	+	Comment	string
