@@ -29,6 +29,16 @@ Proposed Data Stucture
 	+	Source	string
 	+	Title	string
 
+- MediaMap
+	+	Id	integer
+	+	MediaId	integer
+	+	Comment	string
+
+- MediaMapEvent
+	+	Id	integer
+	+	MapId	integer
+	+	EventId	integer	
+
 - MediaType
 	+	Id	integer
 	+	Title	string
@@ -47,6 +57,10 @@ Proposed Data Stucture
 	+	AKA	string
 	+   AKATypeId
 
+- AKAType
+	+	Id	integer
+	+	Title	string	
+
 - Place
 	+	Id	integer
 	+   PlaceName	string
@@ -57,13 +71,3 @@ Proposed Data Stucture
 	+	County	string
 	+	Country	string
 	+	PostalCode	string
-
-- MediaMap
-	+	Id	integer
-	+	MediaId	integer
-	+	Comment	string
-
-- MediaMapEvent
-	+	Id	integer
-	+	MapId	integer
-	+	EventId	integer	
