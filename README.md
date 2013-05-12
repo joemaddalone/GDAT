@@ -6,6 +6,33 @@ Because I fucking hate GedCom.
 
 Proposed Data Stucture
 ---------------------
+
+- Event
+	+	Id	integer
+	+	Dt	date
+	+	PlaceId	integer
+	+	EventTypeId	integer
+
+- EventPerson
+	+	Id	integer
+	+   EventId	integer
+	+   PersonId	integer
+
+- EventType
+	+	Id	integer
+	+	Title	string
+
+- Media
+	+	Id	integer
+	+	MediaTypeId	integer
+	+	FileName	string
+	+	Source	string
+	+	Title	string
+
+- MediaType
+	+	Id	integer
+	+	Title	string
+
 - Person
 	+	Id	integer
 	+	Fname	string
@@ -13,43 +40,16 @@ Proposed Data Stucture
 	+	Lname	string
 	+	Mother	integer
 	+	Father	integer
-	+	adoptedMother	integer
-	+	adoptedFather	integer
-
-- PersonBirth
-	+	Id	integer
-	+	Date	date
-	+	PlaceId	integer
-
-- PersonMarriage
-	+	Id	integer
-	+	Person1	integer
-	+	Person2	integer
-	+	PlaceId	integer
-
-- PersonDeath	
-	+	Id	integer
-	+	Person	integer
-	+	PlaceId	integer
-	+	Date	date
-
-- PersonAdoption
-	+	Id	integer
-	+	PersonId	integer
-	+	Mother	integer
-	+	Father	integer
-	+	Date	date
 
 - PersonAKA
 	+	Id	integer
 	+	PersonId	integer
-	+	AKAF(irst)	string
-	+	AKAM(iddle)	string
-	+	AKAL(ast)	string
-	+	AKAN(ickname)	string
-	
+	+	AKA	string
+	+   AKATypeId
+
 - Place
 	+	Id	integer
+	+   PlaceName	string
 	+	City	string
 	+	State	string
 	+	Province	string
@@ -58,26 +58,12 @@ Proposed Data Stucture
 	+	Country	string
 	+	PostalCode	string
 
-- Media
-	+	Id	integer
-	+	FileName	string
-	+	FileType	integer
-	+	MediaComment	string
-	+	MediaTitle	string
-
-- MediaComment
-	+   Id	integer
-	+	MediaId	integer
-	+	PersonId	integer
-	+	Comment	string
-
-
 - MediaMap
 	+	Id	integer
 	+	MediaId	integer
-	+	PersonId	integer
+	+	Comment	string
 
-- Filetype
-	+	Id integer
-	+	Title	string
-	+	Extension	string
+- MediaMapEvent
+	+	Id	integer
+	+	MapId	integer
+	+	EventId	integer	
