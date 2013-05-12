@@ -16,67 +16,67 @@ Proposed Data Stucture
 	+	adoptedMother	integer
 	+	adoptedFather	integer
 
-PersonBirth
-	Id	integer
-	Date	date
-	PlaceId	integer
+- PersonBirth
+	+	Id	integer
+	+	Date	date
+	+	PlaceId	integer
 
-PersonMarriage
-	Id	integer
-	Person1	integer
-	Person2	integer
-	PlaceId	integer
+- PersonMarriage
+	+	Id	integer
+	+	Person1	integer
+	+	Person2	integer
+	+	PlaceId	integer
 
-PersonDeath	
-	Id	integer
-	Person	integer
-	PlaceId	integer
-	Date	date
+- PersonDeath	
+	+	Id	integer
+	+	Person	integer
+	+	PlaceId	integer
+	+	Date	date
 
-PersonAdoption
-	Id	integer
-	PersonId	integer
-	Mother	integer
-	Father	integer
-	Date	date
+- PersonAdoption
+	+	Id	integer
+	+	PersonId	integer
+	+	Mother	integer
+	+	Father	integer
+	+	Date	date
 
-PersonAKA
-	Id	integer
-	PersonId	integer
-	AKAF(irst)	string
-	AKAM(iddle)	string
-	AKAL(ast)	string
-	AKAN(ickname)	string
+- PersonAKA
+	+	Id	integer
+	+	PersonId	integer
+	+	AKAF(irst)	string
+	+	AKAM(iddle)	string
+	+	AKAL(ast)	string
+	+	AKAN(ickname)	string
 	
-Place
-	Id	integer
-	City	string
-	State	string
-	Province	string
-	Region	string
-	County	string
-	Country	string
-	PostalCode	string
+- Place
+	+	Id	integer
+	+	City	string
+	+	State	string
+	+	Province	string
+	+	Region	string
+	+	County	string
+	+	Country	string
+	+	PostalCode	string
 
-Media
-	Id	integer
-	FileName	string
-	FileType	integer
-	MediaComment	string
-	MediaTitle	string
+- Media
+	+	Id	integer
+	+	FileName	string
+	+	FileType	integer
+	+	MediaComment	string
+	+	MediaTitle	string
 
-MediaComment
-	MediaId	integer
-	PersonId	integer
-	Comment	string
+- MediaComment
+	+	MediaId	integer
+	+	PersonId	integer
+	+	Comment	string
 
 
-MediaMap
-	Id	integer
-	MediaId	integer
-	PersonId	integer
+- MediaMap
+	+	Id	integer
+	+	MediaId	integer
+	+	PersonId	integer
 
-Filetype
-	Id integer
-	Title	string
-	Extension	string
+- Filetype
+	+	Id integer
+	+	Title	string
+	+	Extension	string
