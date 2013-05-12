@@ -7,14 +7,14 @@ Because I fucking hate GedCom.  It is the EDI to today's JSON.
 Proposed Data Stucture
 ---------------------
 Person
-	Id	integer
-	Fname	string
-	Mname	string
-	Lname	string
-	Mother	integer
-	Father	integer
-	adoptedMother	integer
-	adoptedFather	integer
+	+	Id	integer
+	+	Fname	string
+	+	Mname	string
+	+	Lname	string
+	+	Mother	integer
+	+	Father	integer
+	+	adoptedMother	integer
+	+	adoptedFather	integer
 
 PersonBirth
 	Id	integer
