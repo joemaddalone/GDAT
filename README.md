@@ -6,7 +6,7 @@ Because I fucking hate GedCom.  It is the EDI to today's JSON.
 
 Proposed Data Stucture
 ---------------------
-Person
+- Person
 	+	Id	integer
 	+	Fname	string
 	+	Mname	string
