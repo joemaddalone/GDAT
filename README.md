@@ -1,7 +1,7 @@
 GDAT
 ====================
 
-Because I fucking hate GedCom.  It is the EDI to today's JSON.
+Because I fucking hate GedCom.
 
 
 Proposed Data Stucture
