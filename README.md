@@ -8,66 +8,64 @@ Proposed Data Stucture
 ---------------------
 
 - Event
-	+	Id	integer
+	+	Id	int
 	+	Dt	date
-	+	PlaceId	integer
-	+	EventTypeId	integer
+	+	PlaceId	int
+	+	EventTypeId	int
 
 - EventPerson
-	+	Id	integer
-	+   EventId	integer
-	+   PersonId	integer
-
+	+	Id	int
+	+	EventId	int
+	+	PersonId	int
+	
 - EventType
-	+	Id	integer
-	+	Title	string
+	+	Id	int
+	+	Title	varchar
 
 - Media
-	+	Id	integer
-	+	MediaTypeId	integer
-	+	FileName	string
-	+	Source	string
-	+	Title	string
+	+	Id	int
+	+	MediaTypeId	int
+	+	FileName	varchar
+	+	Source	varchar
+	+	Comment	varchar
 
 - MediaMap
-	+	Id	integer
-	+	MediaId	integer
-	+	Comment	string
-
-- MediaMapEvent
-	+	Id	integer
-	+	MapId	integer
-	+	EventId	integer	
+	+	Id	int
+	+	MediaId	int
+	+	EventId	int
+	+	Comment	varchar
 
 - MediaType
-	+	Id	integer
-	+	Title	string
+	+	Id	int
+	+	Title	varchar
 
 - Person
-	+	Id	integer
-	+	Fname	string
-	+	Mname	string
-	+	Lname	string
-	+	Mother	integer
-	+	Father	integer
+	+	Id	int
+	+	Fname	varchar
+	+	Lname	varchar
+	+	Mname	varchar
+	+	Mother	int
+	+	Father	int
 
 - PersonAKA
-	+	Id	integer
-	+	PersonId	integer
-	+	AKA	string
-	+   AKATypeId
+	+	Id	int
+	+	PersonId	int
+	+	AKA	varchar
+	+	AKATypeId	int
 
-- AKAType
-	+	Id	integer
-	+	Title	string	
+- PersonAKAType
+	+	Id	int
+	+	Title	varchar
 
 - Place
-	+	Id	integer
-	+   PlaceName	string
-	+	City	string
-	+	State	string
-	+	Province	string
-	+	Region	string
-	+	County	string
-	+	Country	string
-	+	PostalCode	string
+	+	Id	int
+	+	City	varchar
+	+	State	varchar
+	+	Province	varchar
+	+	Region	varchar
+	+	County	varchar
+	+	Country	varchar
+	+	PostalCode	varchar
+	+	PlaceName	varchar
+	+	Longitude	decimal
+	+	Latitude	decimal
